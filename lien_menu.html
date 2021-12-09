@@ -5,7 +5,7 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device=width, initial=scale=1.0'>
     <meta http-equiv='X-UA-compatible' content='IE=edge'>
-    <meta name='description' content='mes selecteur en HTML, css'>
+    <meta name='description' content='les lien et menu en html, css'>
     <meta name='author' content='Alix'>
     <meta name='keywords' content=',html ,css ,img , video, zoning, tab ...'>
     <title>ma page lien menu</title>
@@ -67,13 +67,13 @@
         <div class="ancreNav">
             <a href="index.html">strucure</a>
             <a href="texte.html">textes</a>
-            <a href="selecteur.html" >sélecteur</a>
+            <a href="selecteur.html">sélecteur</a>
             <a href="image.html">images</a>
             <a href="postition.html">posotion</a>
             <a href="tableau.html">tableau</a>
             <a href="zoning.html">zoning</a>
             <a href="listes.html">listes</a>
-            <a href="lien_menu.html"class="activ" >liens & menus</a>
+            <a href="lien_menu.html" class="activ">liens & menus</a>
             <a href="formulaire.html">formumlaires</a>
             <a href="multimedia.html">multimedia</a>
             <a href="animation.html">animation</a>
@@ -81,8 +81,94 @@
     </nav>
 
     <main>
-        
+        <h2>Lien & Menu</h2>
+        <div class="ancre">
+            <a href="#lien">Les lien</a>
+            <a href="#menu">Les menu</a>
+            <a href="#menuDeroulant">Les menu déroulant</a>
+        </div>
+
+        <section id="lien">
+            <h3>les liens</h3>
+
+            <a href="https://codepen.io/" target="_blank"
+                title="se rendre sur le site CodePen, souvre dans un nouvelle onglet">
+                CodePen is a social dévelopment environment for front-end designer and developpers
+            </a>
+
+            <br><!-- differant sur firefox et chrome-->
+            <a href="files/Developpeur .pdf"> telecharger mon CV</a>
+            <br>
+
+            <a href="files/Developpeur .pdf"> voir mon CV</a>
+            <br>
+
+            <a href="#" onclick="window.print()"> Imprimer la page</a>
+            <br>
+
+            <p>
+                Cliquez
+                <a href="index.html">ici</a>
+                pour vous rendre a la page d'acceuil.
+            </p>
+        </section>
+
+        <section id="menu">
+            <h3>les menu</h3>
+
+            <nav>
+                <ul>
+                    <li><a href="">acceuil</a></li>
+                    <li><a href="">Parcours</a></li>
+                    <li><a href="">competance</a></li>
+                    <li><a href="">realisation</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="menuDeroulant">
+            <h3>les menu déroulant</h3>
+            <nav>
+                <ul class="niveau1">
+                    <li>
+                        <a href="">acceuil</a>
+                    </li>
+
+                    <li class="sousMenu">
+                        <a href="#">Formation</a>
+                        <ul class="niveau2">
+                            <li><a href="#">etudiant</a></li>
+                            <li><a href="#">emploi du temps</a></li>
+                            <li><a href="#">recherche d'emploi</a></li>
+                            <li><a href="#">Document</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Information</a></li>
+
+                    <li class="sousMenu">
+                        <a href="#">cours</a>
+
+                        <ul class="niveau2">
+                            <li><a href="#">Internet</a></li>
+                            <li><a href="#">html / css</a></li>
+                            <li><a href="#">CMS</a></li>
+                            <li><a href="#">Stats</a></li>
+                            <li><a href="#"> Réseaux sociaux</a></li>
+                            <li><a href="#">Référancement</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Chaier des charges</a></li>
+                            <li><a href="#">Photoshop</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#"> Mon CV</a></li>
+                </ul>
+            </nav>
+        </section>
     </main>
+
 
     <footer>
         <!-- lien administratifs, des mention legal, plan du site, condition general d'utilisation et cgv??, contact et copyright  -->
